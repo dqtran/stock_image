@@ -1,0 +1,94 @@
+/**
+ * Demo page styles, all list scroll effects styles are in sctroll.css
+ */
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #323232;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	color: #eee;
+	line-height: 1;
+	
+}
+
+#content {
+	margin-top: 2em;
+	width: 100%;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+}
+
+h1 {
+	margin-left: 20px;
+	font-size: 50px;
+}
+p {
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+/**
+ * List used for the demo page
+ */
+ul.stroll {
+	position: relative;
+	width: 100%;
+	height: 88%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	list-style: none;
+
+	-webkit-perspective: 284px;
+	   -moz-perspective: 284px;
+	    -ms-perspective: 284px;
+	     -o-perspective: 284px;
+	        perspective: 284px;
+}
+
+ul.stroll li img{
+	position: relative;
+	background: #eee;
+	z-index: 2;
+	width: 100%;
+	/*padding: 2px, 2px, 2px, 2px;*/
+
+	-webkit-transform: translateZ(0px);
+	   -moz-transform: translateZ(0px);
+	    -ms-transform: translateZ(0px);
+	     -o-transform: translateZ(0px);
+	        transform: translateZ(0px);
+}
+
+ul.nav {
+    list-style: none;
+	width: 100%;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+ul.nav li {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	margin-right: 5px;
+}
+ul.nav li.active{
+	display: inline-block;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin-right: 5px;
+}
